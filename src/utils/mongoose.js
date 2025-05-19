@@ -10,7 +10,7 @@ export async function dbConnect() {
   }
 
   const db = await connect(
-    process.env.MONGODB_URI || "mongodb://localhost:27017/nextjs"
+    process.env.MONGODB_URI || "mongodb+srv://jjmanzo:jjmanzo.2327@clustermongo-crud.ny7kb.mongodb.net/?retryWrites=true&w=majority&appName=ClusterMongo-Crud"
   );
   // console.log(db.connection.db.databaseName);
   conn.isConnected = db.connections[0].readyState;
